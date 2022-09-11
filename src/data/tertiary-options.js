@@ -1,64 +1,10 @@
 export const tertiaryOptions = {
-    'default-cluster': [
+    'list-clusters': [
         {
-            value: 'default-cluster-option',
-            label: 'with default options.',
-            usage: 'eksctl create cluster',
-            nb: 'Creates an EKS cluster with two managed nodes.\n\nKubernetes API endpoint access will use default of {publicAccess=true, privateAccess=false} for cluster.\n\nCloudWatch logging is not enabled.'
-        },
-        {
-            value: 'default-cluster-dry-run',
-            label: 'as a dry run',
-            usage: 'eksctl create cluster --dry-run',
-            nb: 'Prints eksctl cluster manifest yaml to stdout without creating the cluster.'
+            value: 'eks-list-clusters',
+            label: 'list the eks clusters.',
+            usage: 'aws eks list-clusters',
+            nb: 'This command lists the eks clusters in the given default aws profile.',
         },
     ],
-
-    'addon': [
-        {
-            value: 'create-addon',
-            label: 'install a latest version of an addon',
-            usage: 'eksctl create addon --cluster $CLUSTER_NAME --name $ADDON_NAME',
-            nb: 'Installs the latest version of an addon to a cluster.\n\nAddon name could "adot", "kube-proxy", "vpc-cni", "coredns", "aws-ebs-csi-driver" or any other addon applicable for the cluster.'
-        },
-
-    ],
-
-    'fargate-profile': [
-        {
-            value: 'fargate-profile-option',
-            label: 'with default options.',
-            usage: 'eksctl create fargateprofile --cluster $CLUSTER_NAME --name $FARGATE_PROFILE_NAME --namespace $FARGATE_PROFILE_NAMESPACE',
-            nb: 'Creates a Fargate profile with default options.\n\nFargate profile will be created with workloads of $FARGATE_PROFILE_NAMESPACE Kubernetes namespace scheduled into fargate.'
-        }
-    ],
-
-    'iamserviceaccount': [
-        {
-            value: 'iamserviceaccount-option',
-            label: 'with an example policy.',
-            usage: 'eksctl create iamserviceaccount --name $IAM_ACCOUNT_NAME  --namespace $IAM_ACCOUNT_NAMESPACE --cluster $CLUSTER_NAME   --attach-policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess  --approve     --override-existing-serviceaccounts',
-            nb: 'will create a IAM role bound to a service account with an example policy, which is read-only access to S3.\n\nsubstitute --attach-policy-arn with policy ARN for creating other types service accounts.'
-        },
-
-    ],
-
-    'nodegroup': [
-        {
-            value: 'nodegroup-option',
-            label: 'with default options.',
-            usage: 'eksctl create nodegroup --cluster $CLUSTER_NAME --name $NODE_GROUP_NAME',
-            nb: 'Creates a nodegroup with default options.\n\nNodegroup will be created with 2 m5.large EC2 instances.'
-        },
-    ],
-
-    'iamidentitymapping': [
-        {
-            value: 'iamidentitymapping-option',
-            label: 'map a clusterrole to clusterrolebinding',
-            usage: 'eksctl create iamidentitymapping --cluster $CLUSTER_NAME --arn $ARN --username $USERNAME --group $GROUP',
-            nb: 'Creates an IAM identity mapping with default options.\n\nIAM identity mapping will be created with $ARN, $USERNAME, and $GROUP.\n\nUse kubectl get clusterrole to view clusterroles.\n\nUse kubectl get clusterrolebinding to view clusterrolebindings.\n\nUse eksctl get iamidentitymapping --cluster $CLUSTER_NAME to view iamidentitymappings and to find --arn format for account/role.'
-        },
-    ],
-
 };

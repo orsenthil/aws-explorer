@@ -149,7 +149,7 @@ class App extends Component {
             <div className="row">
               <div className="col-5">
                 <h2 className="content__title  dark-white">
-                  <span>eksctl</span> explorer
+                  <span>aws</span> explorer
                 </h2>
                 <p className="content__subtitle dark-grey">
                   Commands to launch, and manage EKS clusters in an accessible way.

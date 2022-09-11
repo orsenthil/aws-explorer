@@ -1,6 +1,6 @@
 {
-  "short_name": "eksctl explorer",
-  "name": "eksctl explorer",
+  "short_name": "aws explorer",
+  "name": "aws explorer",
   "icons": [
     {
       "src": "favicon.ico",

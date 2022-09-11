@@ -1,5 +1,5 @@
 {
-  "name": "eksctl-explorer",
+  "name": "aws-explorer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,4 +1,4 @@
-# Contributing to eksctl-explorer
+# Contributing to aws-explorer
 
 ### Local Development
 

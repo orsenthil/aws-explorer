@@ -1,13 +1,13 @@
 version: "3.8"
 services:
-  eksctlexplorer:
+  awsexplorer:
     restart: always
     build:
       context: ./
       cache_from:
         - node:alpine
-    container_name: eksctl-explorer
-    hostname: eksctl-explorer
+    container_name: aws-explorer
+    hostname: aws-explorer
     network_mode: bridge
     volumes:
       - ./:/usr/app

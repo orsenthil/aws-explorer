@@ -6,7 +6,7 @@ import githubGreen from 'assets/images/github-green.svg';
 const Footer = props => (
   <footer className="footer">
     <div className="logo">
-      <a href="https://github.com/orsenthil/eksctl-explorer" rel="noopener noreferrer" target="_blank">
+      <a href="https://github.com/orsenthil/aws-explorer" rel="noopener noreferrer" target="_blank">
         {props.dark ? (
           <img src={githubGreen} alt="Github Logo" className="logo--github" />
         ) : (
@@ -19,8 +19,8 @@ const Footer = props => (
       From <a href="https://senthil.learntosolveit.com" target="_blank" rel="noopener noreferrer">
     Senthil Kumaran.</a>
     See also <span role="img" aria-label="pointer">👉</span>{' '}
-      <a href="https://eksctl-explorer.learntosolveit.com/" target="_blank" rel="noopener noreferrer">kubectl-explorer,</a>
-      <a href="https://eksctl-explorer.learntosolveit.com/" target="_blank" rel="noopener noreferrer">aws-explorer</a>
+      <a href="https://kubectl-explorer.learntosolveit.com/" target="_blank" rel="noopener noreferrer">kubectl-explorer,</a>
+      <a href="https://eksctl-explorer.learntosolveit.com/" target="_blank" rel="noopener noreferrer">eksctl-explorer</a>
     </p>
 
     <p className="footer__copyright dark-white">
