@@ -8,12 +8,17 @@ export const secondaryOptions = {
             value: 'attach-cluster-to-kubeconfig',
             label: 'attach cluster to kubeconfig',
             usage: 'aws eks update-kubeconfig --name $CLUSTER_NAME',
-            nb: 'CLUSTER_NAME is the name of the cluster you want to attach to your kubeconfig (set to $KUBECONFIG environment variable)',
+            nb: 'CLUSTER_NAME is the name of the cluster you want to attach to your kubernetes cluster (determined using KUBECONFIG value).',
         },
         {
             value: 'get-vpc-id',
             label: 'get vpc id',
             usage: 'aws eks describe-cluster --name $CLUSTER_NAME | jq -r "[.cluster | .resourcesVpcConfig | .vpcId][0]"',
+        },
+        {
+            value: 'get-token',
+            label: 'get token',
+            usage: 'aws eks get-token --cluster-name $CLUSTER_NAME',
         },
     ],
     install: [
