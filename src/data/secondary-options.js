@@ -20,6 +20,11 @@ export const secondaryOptions = {
             label: 'get token',
             usage: 'aws eks get-token --cluster-name $CLUSTER_NAME',
         },
+        {
+            value: 'get-cluster-endpoint-and-version',
+            label: 'get cluster endpoint and version',
+            usage: 'aws eks describe-cluster --name $CLUSTER_NAME --query "cluster.{endpoint: endpoint, version: version}"',
+        },
     ],
     install: [
         {
