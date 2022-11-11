@@ -3,6 +3,14 @@ export const secondaryOptions = {
         {
             value: 'list-clusters',
             label: 'list clusters',
+            usage: 'aws eks list-clusters',
+            nb: 'List all EKS clusters in the current region',
+        },
+        {
+            value: 'list-addons',
+            label: 'list addons',
+            usage: 'aws eks list-addons',
+            nb: 'List all EKS addons in the current region',
         },
         {
             value: 'attach-cluster-to-kubeconfig',
@@ -24,6 +32,11 @@ export const secondaryOptions = {
             value: 'get-cluster-endpoint-and-version',
             label: 'get cluster endpoint and version',
             usage: 'aws eks describe-cluster --name $CLUSTER_NAME --query "cluster.{endpoint: endpoint, version: version}"',
+        },
+        {
+            value: 'describe-cluster',
+            label: 'describe cluster',
+            usage: 'aws eks describe-cluster --name $CLUSTER_NAME',
         },
     ],
     install: [
