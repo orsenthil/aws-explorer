@@ -1,4 +1,5 @@
 const options = [
+    { value: 'cloudformation', label: 'CloudFormation' },
     { value: 'eks', label: 'manage eks' },
     { value: 'ssm', label: 'ssm parameters'},
     { value: 'install', label: 'install aws command-line app' },

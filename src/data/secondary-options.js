@@ -1,4 +1,12 @@
 export const secondaryOptions = {
+    cloudformation: [
+        {
+            value: 'delete-stack',
+            label: 'delete stack',
+            usage: 'aws cloudformation delete-stack --stack-name $STACK_NAME',
+            description: 'Deletes the cloudformation stack with the given name.',
+        },
+    ],
     eks: [
         {
             value: 'list-clusters',
