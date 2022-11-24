@@ -23,6 +23,12 @@ export const secondaryOptions = {
             nb: 'List all EKS clusters in the current region',
         },
         {
+            value: 'list-clusters',
+            label: 'list clusters with endpoint',
+            usage: 'aws eks list-clusters --endpoint $ENDPOINT',
+            nb: 'List all EKS clusters in the current region against the $ENDPOINT which is the staging zone for the EKS cluster.',
+        },
+        {
             value: 'list-addons',
             label: 'list addons',
             usage: 'aws eks list-addons',
