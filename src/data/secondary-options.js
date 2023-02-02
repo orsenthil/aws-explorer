@@ -11,7 +11,7 @@ export const secondaryOptions = {
         {
             value: 'describe-availablity-zones',
             label: 'describe availablity zones',
-            usage: 'aws ec2 describe-availability-zones --region us-west-2 --query 'AvailabilityZones[*].ZoneName --output text',
+            usage: "aws ec2 describe-availability-zones --region us-west-2 --query 'AvailabilityZones[*].ZoneName --output text'",
             description: 'Lists the availablity zones for the given region.',
         },
     ],
