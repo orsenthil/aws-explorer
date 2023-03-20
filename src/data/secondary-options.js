@@ -25,6 +25,11 @@ export const secondaryOptions = {
             nb: 'List all EKS clusters in the current region',
         },
         {
+            value: 'delete-cluster',
+            label: 'delete cluster',
+            usage: 'aws eks delete-cluster --name $CLUSTER_NAME',
+            nb: 'Delete the EKS cluster with the given name. Ensure that cluster is empty before deleting. Delete the node groups first using the comand `aws eks delete-nodegroup --cluster-name $CLUSTER_NAME --nodegroup-name $NODEGROUP_NAME`',
+        {
             value: 'list-clusters',
             label: 'list clusters with endpoint',
             usage: 'aws eks list-clusters --endpoint $ENDPOINT',
